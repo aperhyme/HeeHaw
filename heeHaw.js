@@ -1,17 +1,26 @@
-for(let i=1; i <=100; i++){
+function heeHaw() {
+    let num = prompt("Enter any number!");
+    if(isNaN(num)){
+        document.write("Invalid input")
+    }
+    for(let i=1; i <=num; i++){
 
-    if((i%3 === 0) && (i%5 === 0)){
-        console.log("Hee Haw!")
-    }
-    else if((i%3 === 0)){
-        console.log("Hee!")
+        if((i%3 === 0) && (i%5 === 0)){
+            document.write("Hee Haw! <br>")
+        }
+        else if((i%3 === 0)){
+            document.write("Hee! <br>")
 
-    }
-    else if(i%5 === 0){
-        console.log("Haw!")
-    }
-    else{
-        console.log(i)
+        }
+        else if(i%5 === 0){
+            document.write("Haw! <br>")
+        }
+        else{
+            document.write(i +"<br>")
 
+        }
     }
+
 }
+
+heeHaw();
